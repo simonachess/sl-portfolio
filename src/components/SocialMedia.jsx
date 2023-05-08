@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
 const SocialMedia = () => (
-  <div className="flex justify-end items-center flex-col px-4 py-8">
+  <div className="hidden lg:flex justify-end items-center flex-col px-4 py-8">
     <div className="group w-10 h-10 rounded-full bg-white my-1 border border-1 border-default-100 flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-secondary hover:border-secondary cursor-pointer">
       <a href="https://www.linkedin.com/in/simona-limontaite-33781513/" target="blank">
         <BsLinkedin className="w-[15px] h-[15px] text-default-700 group-hover:text-white" />

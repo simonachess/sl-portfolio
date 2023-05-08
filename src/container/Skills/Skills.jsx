@@ -48,7 +48,7 @@ const Skills = () => {
         <div className="flex w-full justify-start items-start flex-col">
           {experiences.map((experience) => (
             <motion.div
-              className="w-full flex flex-row justify-start items-start my-4"
+              className="w-full flex flex-col lg:flex-row justify-start items-start my-4"
               key={experience.year}
             >
               <div className="mr-12 w-32">

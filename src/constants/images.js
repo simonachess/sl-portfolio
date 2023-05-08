@@ -17,6 +17,7 @@ import laptop from '../assets/laptop.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import tailwind from '../assets/tailwind.png';
+import bgWhite from '../assets/bgWhite.png';
 
 import frontendmentor from '../assets/frontendmentor.svg';
 
@@ -40,4 +41,5 @@ export default {
   logo,
   tailwind,
   frontendmentor,
+  bgWhite,
 };
