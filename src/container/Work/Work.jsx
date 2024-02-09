@@ -34,7 +34,7 @@ const Work = () => {
       }
     }, 500);
   };
-  console.log(filterWork);
+
   return (
     <>
       <h2 className="text-5xl font-extrabold text-center uppercase">My <span className="text-secondary">Portfolio</span> Section</h2>
