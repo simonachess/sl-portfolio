@@ -34,7 +34,7 @@ const Work = () => {
       }
     }, 500);
   };
-
+  console.log(filterWork);
   return (
     <>
       <h2 className="text-5xl font-extrabold text-center uppercase">My <span className="text-secondary">Portfolio</span> Section</h2>
@@ -56,7 +56,12 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="flex flex-wrap justify-center items-center"
       >
-        {filterWork.map((work, index) => (
+        {filterWork.sort((a, b) => {
+          /* eslint-disable no-underscore-dangle */
+          const result = new Date(b._updatedAt) - new Date(a._updatedAt);
+          /* eslint-enable no-underscore-dangle */
+          return result;
+        }).map((work, index) => (
           <div
             className="flex flex-col items-center w-[270px] h-[388px] overflow-hidden m-8 p-4 rounded-lg bg-white text-default-900 cursor-pointer transition-all duration-300 ease-in hover:shadow-xl"
             key={index}
