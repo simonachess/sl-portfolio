@@ -97,13 +97,15 @@ const Work = () => {
                 </a>
               </motion.div>
             </div>
-            <div className="flex justify-center items-center p-2 w-full relative flex-col">
-              <h4 className="text-base font-extrabold text-default-900 text-left mt-4 leading-6">{work.title}</h4>
-              <p className="text-sm text-left text-default-700" style={{ marginTop: 10 }}>{work.description}</p>
-              <div className="flex justify-center items-center absolute py-2 px-4 rounded-xl bg-white -top-[25px]">
-                <p className="text-sm text-left text-default-700">{work.tags?.[0]}</p>
+            <a href={work.projectLink} target="_blank" rel="noreferrer">
+              <div className="flex justify-center items-center p-2 w-full relative flex-col">
+                <h4 className="text-base font-extrabold text-default-900 text-left mt-4 leading-6">{work.title}</h4>
+                <p className="text-sm text-left text-default-700" style={{ marginTop: 10 }}>{work.description}</p>
+                <div className="flex justify-center items-center absolute py-2 px-4 rounded-xl bg-white -top-[25px]">
+                  <p className="text-sm text-left text-default-700">{work.tags?.[0]}</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </motion.div>
